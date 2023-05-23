@@ -25,6 +25,7 @@ export async function requestWithTimeout() {
     } catch (error) {
         console.log(error.message);
     }
+    return 'Hello world'
 }
 
 requestWithTimeout();
