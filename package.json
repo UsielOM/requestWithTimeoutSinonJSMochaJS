@@ -11,5 +11,6 @@
   "dependencies": {
     "mocha": "^10.2.0",
     "sinon": "^15.1.0"
-  }
+  },
+  "type": "module"
 }
