@@ -5,7 +5,7 @@ import { requestWithTimeout } from './app.js';
 describe('Mis pruebas', () => {
     let fakeAPIStub;
 
-    beforeEach(() => {
+    beforeEach(() => { //Uitlizo BeforeEach para asegurar un entorno controlado 
         fakeAPIStub = sinon.stub().resolves("Hello world"); //devolverá una promesa resuelta con el texto Hello World 
     })//Se supone que este se ejecutara antes de cada prueba 
 
@@ -17,7 +17,7 @@ describe('Mis pruebas', () => {
         const response = await requestWithTimeout();
 
         assert.strictEqual(response, "Hello world");
-        //sinon.assert.calledOnce(fakeAPIStub);//El codigo da error si  este nunca es llamado tengo que es
+        //sinon.assert.calledOnce(fakeAPIStub);//El codigo da error si  este nunca es llamado tengo que checar este pedaso 
     });
     
 })
